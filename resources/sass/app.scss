@@ -1,8 +1,84 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+.bg-main {
+    background: $main-color;
+}
+
+.navbar {
+    background: $main-color;
+    padding: 0.75rem 0;
+}
+
+.logo {
+    width: 150px;
+}
+
+.nav-link {
+    background: #fff;
+    border: 1px solid #fff;
+    color: $main-color !important;
+}
+
+.nav-link:hover {
+    background: $main-color;
+    color: #fff !important;
+}
+
+.btn-main {
+    border: 1px solid $main-color;
+    color: $main-color;
+}
+
+.btn-main:hover {
+    color: #fff;
+    background: $main-color;
+}
+
+.btn-light {
+    background: transparent;
+    color: #fff !important;
+}
+
+.btn-light:hover {
+    background: #fff;
+    color: $main-color !important;
+}
+
+// header
+
+.header--title {
+    padding: 3rem 0;
+    font-weight: bold;
+    color: #fff;
+    font-size: 3rem;
+}
+
+// footer
+
+footer {
+    text-align: center;
+}
+
+.footer-top {
+    width: 100%;
+    background: $main-color;
+    padding: 0.5rem 0;
+}
+
+.footer-bottom {
+    padding: 1rem 0;
+}
+
+// auth-form
+
+.auth-form--title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
