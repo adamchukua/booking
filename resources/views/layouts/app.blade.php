@@ -47,7 +47,9 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <li class="navbar-item me-3">
-                            <button class="nav-link btn btn-light">Зареєструвати своє помешкання</button>
+                            <a href="/join" class="text-decoration-none">
+                                <button class="nav-link btn btn-light">Зареєструвати своє помешкання</button>
+                            </a>
                         </li>
 
                         <!-- Authentication Links -->
@@ -86,14 +88,19 @@
                 </div>
             </div>
         </nav>
-
-        <main class="{{ Request::is('/') ? '' : 'py-4' }}">
+        <main
+            @if(Request::path() !== '/' and Request::path() !== 'join')
+                class="py-4"
+            @endif
+        >
             @yield('content')
         </main>
 
         <footer>
             <div class="footer-top">
-                <button class="footer-top--btn btn btn-light">Зареєструвати своє помешкання</button>
+                <a href="/join" class="text-decoration-none d-block">
+                    <button class="nav-link btn btn-light m-auto">Зареєструвати своє помешкання</button>
+                </a>
             </div>
             <div class="footer-bottom">
                 <div class="footer-bottom--copyright">

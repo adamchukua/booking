@@ -82,3 +82,35 @@ footer {
     font-size: 1.5rem;
     font-weight: bold;
 }
+
+// join
+
+.join--title {
+    color: #fff;
+    font-weight: bold;
+}
+
+.join--title a {
+    color: $second-color;
+}
+
+.join-info {
+    color: #000;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.join-info--title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.join-info-list {
+    //padding-left: 1.5rem;
+}
+
+.join-info-list--item {
+    background: url('/img/svg/accept-check-success.svg') no-repeat left center;
+    padding: 0.5rem 2rem;
+}
