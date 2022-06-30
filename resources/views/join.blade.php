@@ -4,10 +4,10 @@
     <div class="bg-main">
         <div class="container">
             <div class="row border-bottom pt-5 pb-5">
-                <div class="col-8 d-flex align-items-center">
-                    <h1 class="join--title"><a href="{{ route('register') }}">Реєструйтеся</a> та почніть зустрічати гостей вже сьогодні!</h1>
+                <div class="col-12 col-md-6 col-lg-8 d-flex align-items-center">
+                    <h1 class="join--title pb-4"><a href="{{ route('register') }}">Реєструйтеся</a> та почніть зустрічати гостей вже сьогодні!</h1>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="join-info">
                         <p class="join-info--title">Зареєструйте нове помешкання</p>
                         <ul class="join-info-list list-unstyled">

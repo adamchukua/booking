@@ -14,7 +14,7 @@
                         <label for="email" class="col-form-label">Електронна адреса</label>
                     </div>
 
-                    <div class="row">
+                    <div>
                         <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
 
                         @error('email')
@@ -28,7 +28,7 @@
                         <label for="password" class="col-form-label">Пароль</label>
                     </div>
 
-                    <div class="row mb-3">
+                    <div class="mb-3">
                         <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
                         @error('password')
@@ -38,21 +38,19 @@
                         @enderror
                     </div>
 
-                    <div class="row mb-3">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
-                                <label class="form-check-label" for="remember">
-                                    Запам'ятати мене
-                                </label>
-                            </div>
+                            <label class="form-check-label" for="remember">
+                                Запам'ятати мене
+                            </label>
+                        </div>
                     </div>
 
-                    <div class="row mb-0">
-                        <button type="submit" class="btn btn-main">
-                            Увійти в акаунт
-                        </button>
-                    </div>
+                    <button type="submit" class="w-100 btn btn-main">
+                        Увійти в акаунт
+                    </button>
 
                     <div class="row mb-0">
                         @if (Route::has('password.request'))
